@@ -104,6 +104,28 @@ export {
 } from './api-client/requests/get-qr';
 
 //=========================//
+// REQUEST: GET STATIC QR //
+//=========================//
+
+export {
+  getStaticQr,
+  GetStaticQrRequestPayload,
+  GetStaticQrResponsePayload,
+
+} from './api-client/requests/get-static-qr';
+
+//=========================//
+// REQUEST: QR MEMBERS LIST //
+//=========================//
+
+export {
+  getQrMembersList,
+  QrMembersListRequestPayload,
+  QrMembersListResponsePayload,
+
+} from './api-client/requests/qr-members-list';
+
+//=========================//
 // REQUEST: CHECK ORDER //
 //=========================//
 
