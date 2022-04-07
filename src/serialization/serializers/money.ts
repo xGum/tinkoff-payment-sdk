@@ -6,7 +6,7 @@ export function moneyToPennyOrThrow(value: number): number {
     throw new Error(`Value must be a number`);
   }
 
-  return Math.floor(value * 100);
+  return Math.round(value * 100); // Fix error 10.20*100=1019 !?!?!
 
 }
 

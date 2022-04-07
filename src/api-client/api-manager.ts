@@ -19,6 +19,8 @@ import { getCardList, GetCardListRequestPayload, GetCardListResponsePayload } fr
 import { getCustomer, GetCustomerRequestPayload, GetCustomerResponsePayload } from './requests/get-customer';
 import { getState, GetStateRequestPayload, GetStateResponsePayload } from './requests/get-state';
 import { getQr, GetQrRequestPayload, GetQrResponsePayload } from './requests/get-qr';
+import { getStaticQr, GetStaticQrRequestPayload, GetStaticQrResponsePayload } from './requests/get-static-qr';
+import { getQrMembersList, QrMembersListRequestPayload, QrMembersListResponsePayload } from './requests/qr-members-list';
 import { checkOrder, CheckOrderRequestPayload, CheckOrderResponsePayload } from './requests/check-order';
 import {
   initPayment,
@@ -114,6 +116,30 @@ export class ApiManager extends BaseApiManager {
   ): Promise<GetQrResponsePayload> {
 
     return getQr({
+      apiClient: this.apiClient,
+      payload,
+    });
+
+  }
+
+  public getStaticQr(
+    payload: GetStaticQrRequestPayload,
+
+  ): Promise<GetStaticQrResponsePayload> {
+
+    return getStaticQr({
+      apiClient: this.apiClient,
+      payload,
+    });
+
+  }
+
+  public getQrMembersList(
+    payload: QrMembersListRequestPayload,
+
+  ): Promise<QrMembersListResponsePayload> {
+
+    return getQrMembersList({
       apiClient: this.apiClient,
       payload,
     });
