@@ -20,6 +20,8 @@ import { getCustomer, GetCustomerRequestPayload, GetCustomerResponsePayload } fr
 import { getState, GetStateRequestPayload, GetStateResponsePayload } from './requests/get-state';
 import { getQr, GetQrRequestPayload, GetQrResponsePayload } from './requests/get-qr';
 import { getStaticQr, GetStaticQrRequestPayload, GetStaticQrResponsePayload } from './requests/get-static-qr';
+import { addAccountQr, AddAccountQrRequestPayload, AddAccountQrResponsePayload } from './requests/add-account-qr';
+import { chargeQr, ChargeQrRequestPayload, ChargeQrResponsePayload } from './requests/charge-qr';
 import { getQrMembersList, QrMembersListRequestPayload, QrMembersListResponsePayload } from './requests/qr-members-list';
 import { checkOrder, CheckOrderRequestPayload, CheckOrderResponsePayload } from './requests/check-order';
 import {
@@ -116,6 +118,30 @@ export class ApiManager extends BaseApiManager {
   ): Promise<GetQrResponsePayload> {
 
     return getQr({
+      apiClient: this.apiClient,
+      payload,
+    });
+
+  }
+
+  public addAccountQr(
+    payload: AddAccountQrRequestPayload,
+
+  ): Promise<AddAccountQrResponsePayload> {
+
+    return addAccountQr({
+      apiClient: this.apiClient,
+      payload,
+    });
+
+  }
+
+  public chargeQr(
+    payload: ChargeQrRequestPayload,
+
+  ): Promise<ChargeQrResponsePayload> {
+
+    return chargeQr({
       apiClient: this.apiClient,
       payload,
     });
