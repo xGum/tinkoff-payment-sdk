@@ -126,6 +126,17 @@ export {
 } from './api-client/requests/qr-members-list';
 
 //=========================//
+// REQUEST: ADD ACCOUNT QR //
+//=========================//
+
+export {
+  addAccountQr,
+  AddAccountQrRequestPayload,
+  AddAccountQrResponsePayload,
+
+} from './api-client/requests/add-account-qr';
+
+//=========================//
 // REQUEST: CHECK ORDER //
 //=========================//
 
@@ -168,6 +179,17 @@ export {
   ChargePaymentResponsePayload,
 
 } from './api-client/requests/charge-payment';
+
+//==========================//
+// REQUEST: CHARGE QR  //
+//==========================//
+
+export {
+  chargeQr,
+  ChargeQrRequestPayload,
+  ChargeQrResponsePayload,
+
+} from './api-client/requests/charge-qr';
 
 //===========================//
 // REQUEST: FinishAuthorize  //
