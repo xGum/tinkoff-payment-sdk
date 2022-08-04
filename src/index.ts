@@ -126,7 +126,7 @@ export {
 } from './api-client/requests/qr-members-list';
 
 //=========================//
-// REQUEST: QR MEMBERS LIST //
+// REQUEST: ADD ACCOUNT QR //
 //=========================//
 
 export {
@@ -181,7 +181,7 @@ export {
 } from './api-client/requests/charge-payment';
 
 //==========================//
-// REQUEST: CHARGE PAYMENT  //
+// REQUEST: CHARGE QR  //
 //==========================//
 
 export {
