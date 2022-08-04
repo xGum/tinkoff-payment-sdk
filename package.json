@@ -1,5 +1,5 @@
 {
-  "name": "@jfkz/tinkoff-payment-sdk",
+  "name": "@xGum/tinkoff-payment-sdk",
   "version": "1.2.0",
   "description": "Tinkoff Payment SDK for Node.js",
   "scripts": {
